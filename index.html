@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Cars Fan Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            padding: 0;
+            background-color: #f0f0f0;
         }
 
-        .login-container {
-            background-color: #1B2142;
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
+        h2 {
+            color: #333;
         }
 
-        button {
-            background-color: #4cad50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
+        p {
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
             border-radius: 4px;
-            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Cars Fan Page</h1>
+    </header>
 
-<div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <section>
+        <h2>About Cars</h2>
+        <p>Cars is a popular animated film series produced by Pixar Animation Studios and released by Walt Disney Pictures. The franchise features anthropomorphic cars with personalities and their adventures.</p>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <h2>Main Characters</h2>
+        <p>Some of the main characters in the Cars series include Lightning McQueen, Mater, Sally Carrera, and many more.</p>
 
-        <button type="button" onclick="login()">Login</button>
-    </form>
-</div>
+        <h2>Gallery</h2>
+        <img src="lightning_mcqueen.jpg" alt="Lightning McQueen">
+        <img src="mater.jpg" alt="Mater">
+        <!-- Add more images as needed -->
 
-<script>
-    function login() {
-        // This is a placeholder function for demonstration purposes.
-        // In a real application, you would need to implement server-side authentication.
-        alert('Login button clicked. Implement server-side authentication.');
-    }
-</script>
+    </section>
 
+    <footer>
+        <p>© 2024 Cars Fan Page. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
